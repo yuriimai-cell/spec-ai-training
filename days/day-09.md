@@ -161,7 +161,7 @@ git status
 
 ## Git操作
 
-Ghostty（またはターミナル.app / Git Bash）を開いて、リポジトリフォルダに移動します。
+Ghostty（またはターミナル.app）を開いて、リポジトリフォルダに移動します。
 
 ```bash
 # 研修リポジトリに移動（クローン先がデスクトップの場合）
@@ -199,8 +199,9 @@ git push origin training/day-09-data-llm
 **GitHubでPRを作成:**
 1. https://github.com/あなたのユーザー名/spec-ai-training を開く
 2. 「Compare & pull request」をクリック
-3. タイトル: `Day9: データ分析レポート + LLM基礎挙動ノート`
-4. テンプレートに記入 → 「Create pull request」
+3. **base repository** が自分のリポジトリになっていることを確認（親リポジトリが選ばれていたら変更）
+4. タイトル: `Day9: データ分析レポート + LLM基礎挙動ノート`
+5. テンプレートに記入 → 「Create pull request」
 
 ---
 

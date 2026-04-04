@@ -5,6 +5,8 @@
 Cursor + AI でProject Aを実装し、Vercelにデプロイして公開URLで動作確認する。
 
 > 4/15-16 は展示会で研修休みだったため、間が空いています。まず Day10 の要件定義書とモックアップを読み返してから着手してください。
+>
+> **前提**: Cursor と Vercel のセットアップが完了している必要があります。まだの場合は `account-setup.md` を参照してください。
 
 ---
 
@@ -243,7 +245,7 @@ git push origin main
 
 ## Git操作（研修リポジトリへの提出）
 
-Ghostty（またはターミナル.app / Git Bash）を開いて、研修リポジトリに移動します（project-a とは別のフォルダです）。
+Ghostty（またはターミナル.app）を開いて、研修リポジトリに移動します（project-a とは別のフォルダです）。
 
 ```bash
 # 研修リポジトリに移動（クローン先がデスクトップの場合）
@@ -281,8 +283,9 @@ git push origin training/day-11-project-a-deploy
 **GitHubでPRを作成:**
 1. https://github.com/あなたのユーザー名/spec-ai-training を開く
 2. 「Compare & pull request」をクリック
-3. タイトル: `Day11: Project A 実装・デプロイ完了`
-4. テンプレートに記入（公開URLを必ず記載）→ 「Create pull request」
+3. **base repository** が自分のリポジトリになっていることを確認（親リポジトリが選ばれていたら変更）
+4. タイトル: `Day11: Project A 実装・デプロイ完了`
+5. テンプレートに記入（公開URLを必ず記載）→ 「Create pull request」
 
 ---
 

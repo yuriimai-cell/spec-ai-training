@@ -4,6 +4,8 @@
 
 Project A の経験を活かし、1日で設計→実装→公開を完結する。「AI を使えば非エンジニアでも1日でWebアプリを公開できる」を実証する。
 
+> **前提**: Day10-11 と同様に Cursor + Vercel を使用します。セットアップは `account-setup.md` を参照。
+
 ---
 
 ## 必須課題
@@ -171,7 +173,7 @@ Day11 と同じ形式で以下を作成する:
 
 ## Git操作（研修リポジトリへの提出）
 
-Ghostty（またはターミナル.app / Git Bash）を開いて、研修リポジトリに移動します。
+Ghostty（またはターミナル.app）を開いて、研修リポジトリに移動します。
 
 ```bash
 # 研修リポジトリに移動（クローン先がデスクトップの場合）
@@ -209,8 +211,9 @@ git push origin training/day-12-project-b
 **GitHubでPRを作成:**
 1. https://github.com/あなたのユーザー名/spec-ai-training を開く
 2. 「Compare & pull request」をクリック
-3. タイトル: `Day12: Project B 設計・実装・デプロイ完了`
-4. テンプレートに記入（公開URLを必ず記載）→ 「Create pull request」
+3. **base repository** が自分のリポジトリになっていることを確認（親リポジトリが選ばれていたら変更）
+4. タイトル: `Day12: Project B 設計・実装・デプロイ完了`
+5. テンプレートに記入（公開URLを必ず記載）→ 「Create pull request」
 
 ---
 

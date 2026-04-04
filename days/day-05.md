@@ -80,7 +80,7 @@ Deep Research の出力をもとに、ソース引用を明記した信頼性の
 
 ## Git操作（Day4 の復習 + 実践）
 
-Ghostty（またはターミナル.app / Git Bash）を開いて、リポジトリフォルダに移動します。
+Ghostty（またはターミナル.app）を開いて、リポジトリフォルダに移動します。
 
 ```bash
 # 研修リポジトリに移動（クローン先がデスクトップの場合）
@@ -136,8 +136,9 @@ git push origin training/day-05-research
 **GitHubでPRを作成する:**
 1. https://github.com/あなたのユーザー名/spec-ai-training を開く
 2. 黄色いバナーの「Compare & pull request」をクリック
-3. タイトル: `Day5: リサーチレポート`
-4. テンプレートに記入して「Create pull request」
+3. **base repository** が自分のリポジトリになっていることを確認（親リポジトリ `SHU-T0/spec-ai-training` が選ばれていたら変更する）
+4. タイトル: `Day5: リサーチレポート`
+5. テンプレートに記入して「Create pull request」
 
 ---
 
