@@ -299,6 +299,11 @@ Switched to a new branch 'training/day-04-tool-comparison'
 - `training/day-04/ai-glossary.md` — 課題5の成果物
 - `training/day-04/daily-report.md` — 日報（テンプレート: `templates/daily-report-template.md`）
 
+> **テンプレートの使い方**: `templates/` フォルダに3つのテンプレートがある。Cursor のサイドバーで開いて内容をコピーし、自分のファイルに貼り付けて記入する。
+> - `daily-report-template.md` — 日報。毎日 `daily-report.md` として提出する
+> - `day-pr-body-template.md` — PR の本文。GitHub で PR 作成時に自動で入力される
+> - `day-output-template.md` — 成果物の品質チェックリスト。提出前の自己確認に使う
+
 ```bash
 # ステージング（コミット対象に追加）
 git add training/day-04/

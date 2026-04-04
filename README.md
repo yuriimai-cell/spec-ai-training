@@ -669,9 +669,8 @@ spec-ai-training/
 │   └── ... (day-13/ まで作成済み)
 ├── references/                    ← 参考資料テンプレート
 │   └── farleap-context.example.md
-└── .github/                       ← GitHub設定（PR・Issueテンプレート）
-    ├── PULL_REQUEST_TEMPLATE.md
-    └── ISSUE_TEMPLATE/
+└── .github/                       ← GitHub設定（PRテンプレート）
+    └── PULL_REQUEST_TEMPLATE.md
 ```
 
 > **`training/` フォルダについて**: `training/day-01/` 〜 `training/day-13/` は最初から用意されています。各Dayの成果物は対応するフォルダに直接作成してください。
