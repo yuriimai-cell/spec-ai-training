@@ -11,7 +11,8 @@
 ### Phase 1（Day1-Day3）: オリエンテーション期間
 
 - Git/GitHub研修前のため、PR提出は不要
-- 成果物はSlackの研修チャンネルに直接共有する
+- 成果物は Google Docs / Google Slides で作成し、指定の Google Drive フォルダに格納する
+- 格納後、Slack の研修チャンネルに共有リンクを投稿して完了報告する
 - Day4のGitHub基礎完了後、過去分もリポジトリにPushすることを推奨
 
 ### Phase 2-3（Day4-Day13）: 日次実行ループ

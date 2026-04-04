@@ -31,7 +31,7 @@
 
 | Phase | 期間 | テーマ | 提出方法 |
 |-------|------|--------|---------|
-| Phase 1 | Day1-Day3 (4/1-4/3) | AIツール基礎体験 | Google Docs → Google Drive |
+| Phase 1 | Day1-Day3 (4/1-4/3) | AIツール基礎体験 | Google Docs/Slides → Google Drive → Slack にリンク報告 |
 | Phase 2 | Day4-Day9 (4/6-4/13) | AI基礎 + 実務応用 | Git/PR（Day4でGit学習、Day5以降は毎日PR提出） |
 | Phase 3 | Day10-Day13 (4/14-4/21) | 開発体験 | Git/PR |
 

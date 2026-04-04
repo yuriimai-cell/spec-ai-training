@@ -38,29 +38,16 @@
 
 ## セットアップ手順
 
-### 1. GitHub 初期設定
+### 1. Git / GitHub / SSH / Fork / Clone
 
-```bash
-# Git のインストール確認
-git --version
+**`README.md` のセクション 3〜6 に詳細な手順があります。** そちらを参照してください。
 
-# ユーザー設定
-git config --global user.name "Your Name"
-git config --global user.email "your.email@example.com"
-
-# SSH キー生成
-ssh-keygen -t ed25519 -C "your.email@example.com"
-# 生成された公開鍵を表示
-cat ~/.ssh/id_ed25519.pub
-# 表示された内容をコピーし、GitHub > Settings > SSH and GPG keys > New SSH key に登録
-
-# 接続テスト（"Hi <username>!" と表示されれば成功）
-ssh -T git@github.com
-
-# 研修リポジトリの clone
-# 「あなたのユーザー名」を自分のGitHubユーザー名に置き換える
-git clone git@github.com:あなたのユーザー名/spec-ai-training.git
-```
+概要:
+1. ターミナルの準備（README セクション3）
+2. Git のインストールと初期設定（README セクション4-1〜4-3）
+3. SSH キーの生成と GitHub への登録（README セクション4-4）
+4. リポジトリのフォーク（README セクション5）
+5. フォークしたリポジトリのクローン（README セクション6）
 
 ### 2. Cursor 初期設定（Day8）
 

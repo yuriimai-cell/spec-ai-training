@@ -40,6 +40,26 @@
 
 ---
 
+## ★ 事前準備チェックリスト
+
+研修初日（Day1）までに以下を完了させてください。上から順に進めると、セクション3〜8の内容をカバーできます。
+
+- [ ] Chrome ブラウザをインストールした
+- [ ] ターミナルアプリを準備した（Mac: Ghostty 推奨、Windows: Git Bash）→ セクション3
+- [ ] Git をインストールした（`git --version` でバージョンが表示される）→ セクション4-1
+- [ ] GitHub アカウントを作成した → セクション4-2
+- [ ] Git の初期設定（名前・メールアドレス）を完了した → セクション4-3
+- [ ] SSH キーを生成して GitHub に登録した（`ssh -T git@github.com` で認証成功）→ セクション4-4
+- [ ] このリポジトリをフォークした → セクション5
+- [ ] フォークしたリポジトリをクローンした → セクション6
+- [ ] AI ツールのアカウントを準備した（`account-setup.md` 参照）→ セクション8
+
+すべてにチェックがつけば、研修を始める準備は完了です。`curriculum.md` を開いて Day1 から進めてください。
+
+> **ヒント**: 上のチェックリストの各項目は、この下のセクション3〜8で詳しく説明しています。詰まったら該当セクションを読んでください。
+
+---
+
 ## 3. ターミナル（Terminal）の準備
 
 ### ターミナルとは？
@@ -371,6 +391,37 @@ Receiving objects: 100% (XX/XX), XX.XX KiB | XX.XX MiB/s, done.
 Resolving deltas: 100% (XX/XX), done.
 ```
 
+### 本体リポジトリとの同期設定（upstream）
+
+フォークした自分のリポジトリは、本体（SHU-T0/spec-ai-training）の更新を自動では受け取りません。研修中にカリキュラムやクイズが更新されることがあるため、以下の設定を行ってください。
+
+```bash
+# 本体リポジトリを upstream として登録する（1回だけ実行すればOK）
+git remote add upstream git@github.com:SHU-T0/spec-ai-training.git
+```
+
+**成功の確認**:
+```bash
+git remote -v
+```
+
+以下のように `origin`（自分のフォーク）と `upstream`（本体）の2つが表示されればOKです:
+```
+origin    git@github.com:あなたのユーザー名/spec-ai-training.git (fetch)
+origin    git@github.com:あなたのユーザー名/spec-ai-training.git (push)
+upstream  git@github.com:SHU-T0/spec-ai-training.git (fetch)
+upstream  git@github.com:SHU-T0/spec-ai-training.git (push)
+```
+
+**本体の更新を取り込みたいとき:**
+```bash
+git checkout main
+git pull upstream main
+git push origin main
+```
+
+> この操作は毎日の作業開始前に実行することを推奨します。
+
 ### うまくいかない場合
 
 - `Permission denied (publickey)` と表示される場合 → セクション「4-4. SSHキーの設定」をやり直してください
@@ -447,8 +498,9 @@ Day1 の開始前に、以下の必須ツールのアカウントを準備して
 
 Git/GitHub研修前のため、PR（プルリクエスト）提出は不要です。
 
-- 成果物は **Google Docs** で作成します
-- 作成したファイルを **Slack の研修チャンネル** に直接共有します
+- 成果物は **Google Docs / Google Slides** で作成します
+- 作成したファイルを指定の **Google Drive フォルダ**に格納します（各DayのガイドにフォルダURLが記載されています）
+- 格納後、**Slack の研修チャンネル**に共有リンクを投稿して完了報告します
 - **手動アップロードNG**: ファイル作成や格納はAIツールを活用して行うこと
 
 > Day4 の GitHub 基礎完了後に、Phase 1 の成果物もリポジトリに Push することを推奨します。
@@ -626,7 +678,7 @@ spec-ai-training/
 │   ├── day-output-template.md     ← 成果物テンプレート
 │   ├── daily-report-template.md   ← 日報テンプレート
 │   └── day-pr-body-template.md    ← PR本文テンプレート
-├── training/                      ← ★ ここに自分の成果物を作成する
+├── training/                      ← ★ ここに自分の成果物を作成する（※）
 │   ├── day-01/
 │   ├── day-02/
 │   └── ...
@@ -636,6 +688,8 @@ spec-ai-training/
     ├── PULL_REQUEST_TEMPLATE.md
     └── ISSUE_TEMPLATE/
 ```
+
+> **※ `training/` フォルダについて**: クローン直後にはこのフォルダは存在しません。Day4 以降、各Day のガイドに従って `mkdir -p training/day-XX` コマンドで作成します。最初から無いのは正常です。
 
 ---
 
@@ -685,20 +739,4 @@ spec-ai-training/
 例: git push origin training/day-05-research を3回実行したが同じエラー
 ```
 
----
-
-## まずやること（チェックリスト）
-
-研修初日までに以下を完了させてください。
-
-- [ ] Chrome ブラウザをインストールした
-- [ ] ターミナルアプリを準備した（Mac: Ghostty 推奨、Windows: Git Bash）
-- [ ] Git をインストールした（`git --version` でバージョンが表示される）
-- [ ] GitHub アカウントを作成した
-- [ ] Git の初期設定（名前・メールアドレス）を完了した
-- [ ] SSH キーを生成して GitHub に登録した（`ssh -T git@github.com` で認証成功）
-- [ ] このリポジトリをフォークした
-- [ ] フォークしたリポジトリをクローンした
-- [ ] AI ツールのアカウントを準備した（`account-setup.md` 参照）
-
-すべてにチェックがつけば、研修を始める準備は完了です。`curriculum.md` を開いて Day1 から進めてください。
+> **チェックリストは本ページ上部の「★ 事前準備チェックリスト」を参照してください。**
