@@ -135,16 +135,9 @@ git checkout -b training/day-05-research
 Switched to a new branch 'training/day-05-research'
 ```
 
-```bash
-# フォルダが存在するか確認する（最初から用意されているはず）
-ls training/day-05
-# もし「No such file or directory」と表示されたら: mkdir -p training/day-05
-```
+**ファイルの作り方（Cursor を使う）:**
 
-**ファイルの作り方:**
-- ターミナルで `open training/day-05` を実行すると Finder でフォルダが開く
-- 方法1: Finder 上でテキストエディット等を使いファイルを作成し、ファイル名を `research-report.md` にして保存
-- 方法2: ターミナルで `touch training/day-05/research-report.md` を実行してからエディタで開く
+Cursor のサイドバーで `training/day-05` フォルダを右クリック → 「New File」でファイルを作成する。フォルダが存在しない場合は `training` を右クリック → 「New Folder」→ `day-05` と入力。
 
 ```bash
 # (ファイルを作成・編集した後)

@@ -156,15 +156,9 @@ git pull origin main
 git checkout -b training/day-06-presentation
 ```
 
-```bash
-# training/day-06 は用意済み。なければ: mkdir -p training/day-06
-ls training/day-06
-```
+**ファイルの作り方（Cursor を使う）:**
 
-**ファイルの作り方:**
-- ターミナルで `open training/day-06` を実行すると Finder でフォルダが開く
-- 方法1: Finder 上でテキストエディット等を使いファイルを作成
-- 方法2: ターミナルで `touch training/day-06/presentation-slides.md` を実行してからエディタで開く
+Cursor のサイドバーで `training/day-06` フォルダを右クリック → 「New File」でファイルを作成する。フォルダが存在しない場合は `training` を右クリック → 「New Folder」→ `day-06` と入力。
 
 ```bash
 # (ファイルを作成・編集した後)

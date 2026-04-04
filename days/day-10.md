@@ -145,14 +145,11 @@ cd ~/Desktop/spec-ai-training
 git pull origin main
 git checkout -b training/day-10-project-a-design
 
-# training/day-10 は用意済み。なければ: mkdir -p training/day-10
-ls training/day-10
 ```
 
-**ファイルの作り方:**
-- ターミナルで `open training/day-10` を実行すると Finder でフォルダが開く
-- 方法1: Finder 上でテキストエディット等を使いファイルを作成し、ファイル名を `project-a-requirements.md` にして保存
-- 方法2: ターミナルで `touch training/day-10/project-a-requirements.md` を実行してからエディタで開く
+**ファイルの作り方（Cursor を使う）:**
+
+Cursor のサイドバーで `training/day-10` フォルダを右クリック → 「New File」でファイルを作成する。フォルダが存在しない場合は `training` を右クリック → 「New Folder」→ `day-10` と入力。
 
 ```bash
 # (ファイルを作成・編集した後)
