@@ -950,12 +950,12 @@ var quizData = {
         correct: 0
       },
       {
-        q: "温度パラメータが「低い」場合のAI出力の特徴はどれですか？",
+        q: "「Input Token」と「Output Token」の違いとして正しいものはどれですか？",
         options: [
-          "安定した（決定的な）出力になる",
-          "より創造的な出力になる",
-          "出力速度が遅くなる",
-          "エラーが多くなる"
+          "Input Tokenはユーザーの質問側、Output TokenはAIの回答側のToken数",
+          "Input Tokenは無料、Output Tokenは有料",
+          "Input Tokenは日本語、Output Tokenは英語",
+          "Input Tokenはテキスト、Output Tokenは画像"
         ],
         correct: 0
       },
@@ -970,12 +970,12 @@ var quizData = {
         correct: 0
       },
       {
-        q: "「同じ質問をしても毎回違う回答が出る」原因はどれですか？",
+        q: "Token数とAPI料金の関係として正しいものはどれですか？",
         options: [
-          "温度パラメータによるランダム性があるため",
-          "AIがインターネットから最新情報を取得しているため",
-          "AIが前回の回答を記憶して変えているため",
-          "バグがあるため"
+          "Token数が多いほどコストが高くなる",
+          "Token数に関係なく料金は一定",
+          "Output Tokenのみ課金される",
+          "料金はリクエスト回数のみで決まる"
         ],
         correct: 0
       }
@@ -1088,6 +1088,16 @@ var quizData = {
           "プロジェクト管理ツール"
         ],
         correct: 0
+      },
+      {
+        q: "AIに実装を依頼する際の「Planモード」の利点はどれですか？",
+        options: [
+          "計画段階でフィードバックすることで最終的なコードの品質が上がり、Token消費も抑えられる",
+          "AIの処理速度が2倍になる",
+          "プログラミング言語を自動的に選択してくれる",
+          "テストコードが自動的に生成される"
+        ],
+        correct: 0
       }
     ]
   },
@@ -1131,6 +1141,16 @@ var quizData = {
           "ソースコードの全行",
           "使用したAIへのプロンプト全文",
           "開発中に発生した全エラーログ"
+        ],
+        correct: 0
+      },
+      {
+        q: "Cursor AI と Claude Code デスクトップアプリの違いとして正しいものはどれですか？",
+        options: [
+          "Cursor AIはファイル単位で指示するのに対し、Claude Codeはプロジェクト全体を任せられる",
+          "Cursor AIは無料だが、Claude Codeは有料のみ",
+          "Claude CodeではPlanモードが使えない",
+          "Cursor AIの方が常に高品質なコードを生成する"
         ],
         correct: 0
       }
