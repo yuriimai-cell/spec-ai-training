@@ -3,3 +3,5 @@ references/farleap-context.local.md
 .serena/
 *.swp
 *~
+.next
+node_modules
